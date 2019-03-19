@@ -1,296 +1,41 @@
 <html>
+
+<head>
 	<style>
-		@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-		@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-		@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 		body {
-			background-image: url("https://i.pinimg.com/originals/3d/e8/43/3de843b7eb6d45af0e84676d74b80af5.jpg");
-			height: 100%;
-			background-size: 50%;
-		}
-		img {
-			margin-left: auto;
-			margin-right: auto;
-			width: 100;
-			height: 100;
-		}
-		table {
-			color: white;
 			text-align: center;
-			font-family: sans-serif;
-			border-width: 3;
-			border-color: cyan;
-			border-style: groove;
-			background-color: rgb(0, 0, 0, 0.7);
+			background-color: black;
 		}
-		p {
-			display: block;
-			font-size: 12
+		.embed {
 		}
-		button {
-			background-color: rgb(0, 255, 255);
-			border: none;
-			color: black;
-			font-size: 16;
-			text-align: center;
-			padding: 15px 25px;
-			margin: auto;
-			display: block;
-		}
-		.titleText {
-			position: absolute;
-			width: 100%;
-			text-align: center;
-			vertical-align: middle;
-			color: white;
-		}
-		.titleImg {
-			width: 100%;
-			height: 100%;
-			margin-left: -1%
-		}
-		.spin {
-			-webkit-animation:spin 8s linear infinite;
-			-moz-animation:spin 8s linear infinite;
-			animation:spin 8s linear infinite;
+		.consoleText {
+			font-family: monospace;
+			color: lightgreen;
 		}
 	</style>
-	<script type="text/javascript">
-		//I put way too much effort into this
-		var spinning = false;
-		var imageList = document.images;
-		function SpinImages(){
-			if (spinning) {
-				for(var i = 1; i < imageList.length; i++) {
-					imageList[i].className = '';
-				}
-			}
-			else {
-				for(var i = 1; i < imageList.length; i++) {
-					imageList[i].className = 'spin';
-				}
-			}
-			spinning = !spinning;
-		}
+</head>
 
-	</script>
-	<head>
-		<title> A List Of Ports On Computers </title>
-	</head>
-	<body>
-		<div>
-			<img src="https://i.pinimg.com/originals/3d/e8/43/3de843b7eb6d45af0e84676d74b80af5.jpg" class="titleImg">
-			<h1 class="titleText" style="font-size: 100; font-family: sans-serif; top: 20%">Some Common Computer Ports</h1>
-			<p class="titleText" style="font-family: monospace; font-size: 50; top: 50%">Jack Walmsley</p>
-			<p class="titleText" style="font-family: monospace; font-size: 20; top: 90%">Scroll Down</p>
+<body height=100% width=100%>
+	<p class="consoleText" style="font-size: 5vw;">
+		> My Computer Tech Projects So Far&#x2590;
+	</p>
+
+	<p class="consoleText" style="font-size: 3vw">
+		1. Computer Ports
+	</p>
+	<div class=embed width=100% height=100% scrolling="no">
+		<iframe src="/School/Ports%20List.html" height="50%" width="50%" frameborder="0">
+		</iframe>
+	</div>
+	<a href="School/BuildFinal.html">
+		<p class="consoleText" style="font-size: 3vw">
+			2. PC Build
+		</p>
+		<div class=embed width=100% height=100%>
+			<iframe src="/School/BuildFinal.html" height="50%" width=height frameborder="0">
+			</iframe>
 		</div>
-		<button type="button" onclick="SpinImages()" style="align-content: center">Click Here To Toggle Spin(Because Why Not)</button>
-		<table border = "1">
-			<th colspan="3" style="font-size: 30">
-				External Ports
-			</th>
+	</a>
+</body>
 
-			<tr>
-				<td width = "25%">
-					VGA
-				</td>
-				<td width = "25%">
-					Used for older monitors
-				</td>
-				<td width = "25%">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/SVGA_port.jpg/300px-SVGA_port.jpg" height="">
-				</td>
-			</tr>
-
-			<tr>
-				<td width = "25%">
-					DVI
-				</td>
-				<td width = "25%">
-					A newer standard than VGA, but still older than HDMI
-				</td>
-				<td width = "25%">
-					<img src="https://sgcdn.startech.com/005329/media/products/gallery_large/DP2DVI2MM6.B.jpg" height="50" width="50">
-				</td>
-			</tr>
-
-			<tr>
-				<td width = "25%">
-					HDMI
-				</td>
-				<td width = "25%">
-					One of the current standards for displays, supports a higher resolution and refresh rate than the older standards. Requires royalties to use.
-				</td>
-				<td width = "25%">
-					<img src="https://multimedia.bbycastatic.ca/multimedia/products/500x500/117/11796/11796117.jpg" height="50" width="50">
-				</td>
-			</tr>
-
-			<tr>
-				<td width = "25%">
-					PS/2
-				</td>
-				<td width = "25%">
-					Older keyboad and mouse ports, now usually replaced by USB though they technically are faster
-				</td>
-				<td width = "25%">
-					<img src="https://www.autodesk.com/products/eagle/blog/wp-content/uploads/2017/02/ps2_ports.png" height="50" width="50">
-					<p>Keyboard in purple, mouse in green</p>
-				</td>
-			</tr>
-
-			<tr>
-				<td width = "25%">
-					USB 3
-				</td>
-				<td width = "25%">
-					Newer, faster version of USB2
-				</td>
-				<td width = "25%">
-					<img src="https://www.audiow3.com/content/images/thumbs/0003074_ifi-audio-isilencer-30-usb-port-rebalancer.png" height="150" width="150">
-				</td>
-			</tr>
-
-			<tr>
-				<td width = "25%">
-					USB 2
-				</td>
-				<td width = "25%">
-					Older, slower version of USB3
-				</td>
-				<td width = "25%">
-					<img src="http://content.us.dlink.com/wp-content/uploads/2014/03/DUB-H7-D1_front.png" height="150" width="150">
-				</td>
-			</tr>
-
-			<tr>
-				<td width = "25%">
-					Serial
-				</td>
-				<td width = "25%">
-					Very old type of port, most commonly used for printers or modems. Basically old USB
-				</td>
-				<td width = "25%">
-					<img src="https://www.computerhope.com/jargon/s/seriport.jpg" height="150" width="150">
-					<p>Not to be confused with VGA, which looks similar</p>
-				</td>
-			</tr>
-
-			<tr>
-				<td width = "25%">
-					DisplayPort
-				</td>
-				<td width = "25%">
-					Similar to HDMI, but is an open standard which means no royalties.
-				</td>
-				<td width = "25%">
-					<img src="https://images-na.ssl-images-amazon.com/images/I/61BomVgTxTL._SL1001_.jpg" height="150" width="150">
-				</td>
-			</tr>
-
-			<tr>
-				<td width = "25%">
-					Thunderbolt
-				</td>
-				<td width = "25%">
-					Uses the same connectors as Mini DisplayPort or USB Type-C, but serves as a display and power cable all in one.
-				</td>
-				<td width = "25%">
-					<img src="https://www.bhphotovideo.com/images/images1000x1000/apple_md861ll_a_thunderbolt_cable_2_0_m_1151131.jpg" height="150" width="150">
-				</td>
-			</tr>
-
-			<tr>
-				<td width = "25%">
-					Sound(7.1)
-				</td>
-				<td width = "25%">
-					Surround sound output, with ports for 7 directional speakers, plus subwoofer
-				</td>
-				<td width = "25%">
-					<img src="https://img.dxcdn.com/productimages/sku_322226_1.jpg" height="150" width="150">
-				</td>
-			</tr>
-
-			<tr>
-				<td width = "25%">
-					Sound(Mic, line in, and Headphone)
-				</td>
-				<td width = "25%">
-					Sound input and output.
-				</td>
-				<td width = "25%">
-					<img src="http://www.learning-about-computers.com/tutorials/images/audio_ports.jpg" height="150" width="150">
-				</td>
-			</tr>
-		</table>
-		<div style="height:5%"></div>
-		<table border="1">
-			<th colspan="3" style="font-size: 30">
-				Internal Ports			
-			</th>
-
-			<tr>
-				<td width = "25%">
-					SATA
-				</td>
-				<td width = "25%">
-					Used for data to and from internal storage such as hard drives or disk drives
-				</td>
-				<td width = "25%">
-					<img src="https://images-na.ssl-images-amazon.com/images/I/71qyPtLzX5L._SX425_.jpg" height="150" width="150">
-				</td>
-			</tr>
-
-			<tr>
-				<td width = "25%">
-					IDE
-				</td>
-				<td width = "25%">
-					Data transfer to and from internal storage. Parallel instead of serial like SATA is, so it's much slower.
-				</td>
-				<td width = "25%">
-					<img src="https://images-na.ssl-images-amazon.com/images/I/31H1MF5YE3L.jpg" height="150" width="150">
-				</td>
-			</tr>
-
-			<tr>
-				<td width = "25%">
-					Motherboard Power
-				</td>
-				<td width = "25%">
-					Delivers power from the power supply to the motherboard so it can power all the various things plugged into it.
-				</td>
-				<td width = "25%">
-					<img src="https://banner2.kisspng.com/20180412/kle/kisspng-power-supply-unit-electrical-connector-atx-electri-wires-5acf964d3bcda8.778475341523553869245.jpg" height="150" width="150">
-				</td>
-			</tr>
-
-			<tr>
-				<td width = "25%">
-					PCI Express Slots
-				</td>
-				<td width = "25%">
-					A large slot with high bandwidth for expansion cards. X16 is the highest bandwidth, commonly for graphics cards; X8 is for smaller cards that don't require as much throughput, such as network cards.
-				</td>
-				<td width = "25%">
-					<img src="https://img.purch.com/pcie-sli-scaling/r/600x450/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9TLzcvMjU2MzI3L29yaWdpbmFsL3BjaWUuanBn" height="150" width="150">
-					<p>X16 on top, X8 in the middle. The one on the bottom is X1, for sound cards and such</p>
-				</td>
-			</tr>
-
-			<tr>
-				<td width = "25%">
-					Hard Drive Power
-				</td>
-				<td width = "25%">
-					Supplies power to hard drives, solid state drives, disk drives and if you're cool, RGB case lights.
-				</td>
-				<td width = "25%">
-					<img src="https://images-na.ssl-images-amazon.com/images/G/02/aplusautomation/vendorimages/f757f050-b8d0-4fc4-9698-d661151c221c.jpg._CB317513741_.jpg" height="150" width="150">
-				</td>
-			</tr>
-
-		</table>
-	</body>
 </html>
