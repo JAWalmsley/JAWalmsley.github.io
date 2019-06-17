@@ -1,0 +1,260 @@
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+	<style>
+		table {
+			text-align: center;
+			color: rgb(255, 255, 255, 0.8);
+			font-family: sans-serif;
+			width: 100%;
+			background-color: rgb(0, 0, 0, 0.3);
+		}
+
+		td {
+			height: 50;
+			width: 30%;
+		}
+
+		body {
+			overflow-x: hidden;
+			text-align: center;
+			background-image: linear-gradient(to right, #a36503, black 50%, #a36503 100%);
+		}
+
+		button {
+			height: 5%;
+			width: 100%;
+			font-family: monospace;
+			background-color: #a36503;
+			color: rgb(255, 255, 255, 0.8);
+			border: none;
+		}
+
+		.spin {
+			-webkit-animation: spin 8s linear infinite;
+			color: orange;
+			font-size: 10vw;
+			text-align: center;
+			font-family: 'ZCOOL QingKe HuangYou', cursive;
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			vertical-align: middle;
+			animation-play-state: paused;
+		}
+
+		.titleImg {
+			background-image: linear-gradient(to right, #a36503, black 50%, #a36503 100%);
+			height: 100%
+		}
+
+		@-webkit-keyframes spin {
+			100% {
+				-webkit-transform: rotate(360deg);
+			}
+		}
+	</style>
+	<script type=text/javascript> function pause(a) { var s=a.style; s.webkitAnimationPlayState='paused' ; } function play(a) { var s=a.style; s.webkitAnimationPlayState='running' ; } </script> </head> <body>
+		<div class="titleImg"></div>
+		<div class="spin" onmouseover="play(this)" onmouseout="pause(this)" style="top: 50%;">The Ultimate PC Build</div>
+		<table border=1>
+			<tr>
+				<td colspan="3">
+				Total Cost: 
+				</td>
+				<td>$19410</td>
+			</tr>
+			
+			<tr>
+				<td >Component</td>
+				<td >Name</td>
+				<td >Stats/Details</td>
+				<td >Price</td>
+			</tr>
+			
+			<tr>
+				<td >CPU</td>
+				<td >Intel - Core i7-7740X</td>
+				<td >
+					4.3 GHz<br>
+					4 Core
+				</td>
+				<td >$472</td>
+			</tr>
+			<tr>
+				<td colspan=4>
+					Turbo Boost: A sort of temporary overclock to boost performance if the CPU is still under max temperature.
+				</td>
+			</tr>
+			<tr>
+				<td colspan=4>
+					I chose this CPU because it is an extremely high performance cpu without being super expensive, sever grade hardware.
+				</td>
+			</tr>			
+			
+			<tr>
+				<td >CPU Cooler</td>
+				<td >Thermaltake - Water 3.0</td>
+				<td >Liquid Cooling</td>
+				<td >$200</td>
+			</tr>
+			<tr>
+				<td colspan=4>
+				Liquid Cooling: Circulates cold water instead of air for better temperature management.
+				</td>
+			</tr>
+			<tr>
+				<td colspan=4>
+					I chose this cooler mainly because water cooling is more effective than air for personal builds. Also, the couplings have lighting that colors the water in cool ways!
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td >Motherboard</td>
+				<td >Asus - STRIX X299-E GAMING</td>
+				<td >
+					ATX Size<br>
+					LGA2066 Socket<br>
+					8 RAM Slots
+				</td>
+				<td >$370</td>
+			</tr>
+			<td colspan=4>
+				ASUS SafeSlot: A metal-reinforced PCI-E slot that can support bigger, heavier cards.
+			</td>
+			<tr>
+				<td colspan=4>
+					I chose this motherboard because it has the correct socket for my CPU and because it has a lot of slots for RAM. Most motherboards only have 4 slots. This allows me to upgrade it more in the future.
+				</td>
+			</tr>
+			
+			<tr>
+				<td >RAM</td>
+				<td >Corsair - Vengeance RGB Pro</td>
+				<td >
+					32 GB(4x8 GB)<br>
+					DDR4 4700
+				</td>
+				<td >$400</td>
+			</tr>
+			<td colspan=4>
+				DDR4: The newest technology for RAM data transfer, using less power and transferring data faster than DDR3.
+			</td>
+			<tr>
+				<td colspan=4>
+					I chose this RAM because it has RGB lighting on the sides and it uses DDR4 for faster speeds.
+				</td>
+			</tr>
+			
+			<tr>
+				<td >SSD</td>
+				<td >Corsair - Neutron NX500</td>
+				<td >
+					1.6 TB<br>
+					PCI-E
+				</td>
+				<td >$2060</td>
+			</tr>
+			<td colspan=4>
+				Multi Level Cell(MLC): Stores more tha one bit of data per cell, providing higher reliability and capacity.
+			</td>
+			<tr>
+				<td colspan=4>
+					I chose this drive because PCI-E drives have the fastest data transfer over SATA. Also I don't actually have to pay for it.
+				</td>
+			</tr>
+			
+			<tr>
+				<td >HDD</td>
+				<td >Toshiba - N300</td>
+				<td >
+					14 TB<br>
+					7200 RPM<br>
+					3.5"
+				</td>
+				<td >$659</td>
+			</tr>
+			<td colspan=4>
+				NAS Drive: A drive that is durable enough to be on 24/7 for servers and network storage.
+			</td>
+			<tr>
+				<td colspan=4>
+					I got this drive because 7200RPM is the fastest speed of mechanical drive I could find. I have this as well as an SSD because a hard drive can be useful for mass storage that doesn't need to be accessed often, such as a large amount of(entirely legal) movie downloads.
+				</td>
+			</tr>
+			
+			<tr>
+				<td >Video Card</td>
+				<td >Asus - ROG Strix GeForce RTX 2080</td>
+				<td >
+					8 GB
+				</td>
+				<td >$1149</td>
+			</tr>
+			<td colspan=4>
+				Raytracing: A lighting method that creates tiny rays going outward from every light source, then calculating the way those rays are absorbed and bounced around. Creates very realistic lighting but difficult to do in real-time without the dedicated hardware this card has.
+			</td>
+			<tr>
+				<td colspan=4>
+					This card is easily the best card on the market at the moment. Not many games have raytracing implemented but I see that becoming more common and RTX series cards willl be necessary to get beautiful lighting. I wouldn't buy this for a personal build as it is expensive at the moment, but this is a dream PC.
+				</td>
+			</tr>
+			
+			<tr>
+				<td >Case</td>
+				<td >Corsair - Air 540</td>
+				<td >
+					ATX Size
+				</td>
+				<td >$189</td>
+			</tr>
+			<td colspan=4>
+				Dual Chamber: A system of organisation in cases that has one compartment with a window for everything that needs airflow: Graphics Cards, CPU, etc. Another, hidden compartment keeps everything else out of the way: Drives, Power Supply, etc. This allows more airflow to the parts that need it and also only puts the coolest-looking things on display.
+			</td>
+			<tr>
+				<td colspan=4>
+					I chose this case because the dual chamber system keeps everything that's ugly like power supply and drives away from the window, and that means I don't have to cable manage as much.
+				</td>
+			</tr>
+			
+			<tr>
+				<td >Power Supply</td>
+				<td >SeaSonic - PRIME Ultra</td>
+				<td >
+					1000 W<br>
+					80+ Titanium<br>
+					Fully Modular
+				</td>
+				<td >$360</td>
+			</tr>
+			<td colspan=4> 
+				80+ Titanium: A measure of efficiency. 80+ means more than 80% efficient, then there are classes of greater than 80% efficiency. Titanium is the highest, with ~94% efficiency at 50% load.
+			</td>
+			<tr>
+				<td colspan=4>
+					This power supply is a fully modular, which means I don't need to clutter my case with cables I don't want. It is also a very high wattage. While I don't need this much power, this means the power supply will stay quiet all the time because it will only be at around 50% load.
+				</td>
+			</tr>
+			
+			<tr>
+				<td >Monitors</td>
+				<td >2 x Dell UP3218K</td>
+				<td >
+					31.5"<br>
+					7680x4320<br>
+					60 Hz
+				</td>
+				<td >$12380</td>
+			</tr>
+			<td colspan=4>
+				Dell ComfortView: A software solution that reduces blue light emissions to be easier on eyes over a long period of time.
+			</td>
+			<tr>
+				<td colspan=4>
+					I chose this monitor mainly because it is 8K resolution. It's stupidly expensive but it is the highest resolution monitor that is commercially available.
+				</td>
+		</table>
+		<br>
+		<button onclick="window.location.href='https://ca.pcpartpicker.com/user/llama2621/saved/#view=Pfjmqs'"> CLICK FOR PCPARTPICKER LIST</button>
+	</body></html>
