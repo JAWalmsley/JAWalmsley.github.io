@@ -17,18 +17,28 @@
 			text-align: center;
 			font-family: sans-serif;
 			color: white;
-			padding: 0vh;
+			padding-bottom: 20vh;
 		}
 
-		.links {
+
+		a.link:link,
+		a.link:visited {
+			box-sizing: border-box;
 			font-size: 3vh;
-			padding-top: 3vh;
-			text-align: center;
-			color: aliceblue;
+			padding: 5vh;
+			background: blue;
+			border-radius: 20px;
+			color: darkgrey;
+			text-decoration: none;
+		}
+
+		a.link:hover {
+			background: rgb(0, 0, 200);
 		}
 
 		body {
-			background: linear-gradient(0deg, rgba(77, 77, 77, 1) 0%, rgba(0, 0, 0, 1) 100%);
+			text-align: center;
+			background: black;
 			font-family: sans-serif;
 		}
 
@@ -38,8 +48,10 @@
 <body>
 	<p class="title">Hey what's up y'all</p>
 	<p class="subtitle">Welcome to my website</p>
-	<p class="subtitle" style="padding-top: 80vh">There's nothing else here lmao</p>
 	<div class="links">
+		<a href="School/SchoolHome.html" class="link">School Things</a>
+		<div style="height:15vh"></div>
+		<a href="Random%20Projects/RandomHome.html" class="link">My Random Projects</a>
 	</div>
 </body>
 
