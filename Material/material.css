@@ -1,5 +1,9 @@
 html {
 	overflow: hidden;
+	width: 100%;
+}
+body {
+	margin: 0;
 }
 .dark-theme {
 	background-color: #121212;
@@ -26,7 +30,6 @@ html {
 	width: 100vw;
 	line-height: 10vh;
 	text-align: center;
-	margin-bottom: 2vh;
 }
 .bottom-bar {
 	height: 10vh;
