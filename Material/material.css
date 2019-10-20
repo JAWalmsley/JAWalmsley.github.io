@@ -1,77 +1,92 @@
 html {
-	overflow: hidden;
-	width: 100%;
+  overflow: hidden;
+  width: 100%;
 }
 body {
-	margin: 0;
+  margin: 0;
+  font-family: sans-serif;
 }
 .dark-theme {
-	background-color: #121212;
-	border: none;
-	color: #FFFFFF;
-	font-family: sans-serif;
+  background-color: #121212;
+  color: #FFFFFF;
 }
 .height-1 {
-	background-color: rgba(256, 256, 256, 0.05);
+  background-color: #1f1f1f;
 }
 .height-2 {
-	background-color: rgba(256, 256, 256, 0.07);
+  background-color: #242424;
 }
 .card {
-	width: 40vw;
-	height: auto;
-	padding: 20px;
-	border-radius: 8px;
-	display: inline-grid;
-	margin: 1vw;
+  width: 900px;
+  height: auto;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  background-color: #1f1f1f;
+}
+.card:hover {
+  background-color: #242424;
 }
 .top-bar {
-	height: 10vh;
-	width: 100vw;
-	line-height: 10vh;
-	text-align: center;
+  height: 70px;
+  width: 100vw;
+  line-height: 80px;
+  text-align: left;
+  padding-left: 20px;
 }
 .bottom-bar {
-	height: 10vh;
-	width: 100vw;
-	line-height: 10vh;
-	text-align: center;
-	position: fixed;
-	bottom: 0;
-	left: 0;
+  height: 70px;
+  width: 100vw;
+  line-height: 70px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 .body-text {
-	font-size: 16px;
+  font-size: 16px;
 }
 .card-title-text {
-	font-size: 16px;
+  font-size: 16px;
 }
 .title-text {
-	font-size: 24px;
+  font-size: 24px;
 }
 .high-emphasis {
-	color: rgba(256, 256, 256, 0.87)
+  color: rgba(255, 255, 255, 0.87);
 }
 .med-emphasis {
-	color: rgba(256, 256, 256, 0.6)
+  color: rgba(255, 255, 255, 0.6);
 }
 .disabled-text {
-	color: rgba(256, 256, 256, 0.38)
+  color: rgba(255, 255, 255, 0.38);
 }
 .primary-accent {
-	background-color: aqua;
-	color: #000000;
-	width: 50px;
-	height: 50px;
-	border-radius: 50px;
-	text-align: center;
-	line-height: 50px;
-	font-size: 30;
+  background-color: aqua;
+  color: #000000;
 }
 .bottom-button {
-	position: fixed;
-  	left: 50%;
-	bottom: 4vh;
-	transform: translate(-50%, -50%);
-	margin: 0 auto;
+  position: fixed;
+  left: 95%;
+  bottom: 4vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30;
+  margin: 0 auto;
+  z-index: 1;
+}
+.bottom-button:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.4);
+  background-color: #24ffff;
+}
+.menu-open-button {
+  margin-right: 20px;
+}
+.menu-open-button:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
