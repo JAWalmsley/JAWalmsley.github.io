@@ -17,11 +17,13 @@ body {
   background-color: #242424;
 }
 .card {
-  width: 900px;
+  width: auto;
   height: auto;
   padding: 20px;
   border-radius: 8px;
   margin: 20px auto;
+  margin-left: 20px;
+  margin-right: 20px;
   background-color: #1f1f1f;
 }
 .card:hover {
