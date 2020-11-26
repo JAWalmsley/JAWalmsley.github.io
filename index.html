@@ -1,56 +1,66 @@
 <html>
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Jack Walmsley</title>
 	<style>
-		.title {
-			font-size: 10vh;
-			text-align: center;
-			font-family: sans-serif;
-			color: white;
-			padding-top: 10vh;
-			padding-bottom: 2vh;
-		}
-
-		.subtitle {
-			font-size: 4vh;
-			text-align: center;
-			font-family: sans-serif;
-			color: white;
-			padding-bottom: 20vh;
-		}
-
-
-		a.link:link,
-		a.link:visited {
-			box-sizing: border-box;
-			font-size: 3vh;
-			padding: 5vh;
-			background: blue;
-			border-radius: 20px;
-			color: white;
-			text-decoration: none;
-		}
-
-		a.link:hover {
-			background: rgb(0, 0, 200);
-		}
-
 		body {
-			text-align: center;
-			background: black;
+			overflow-x: hidden;
 			font-family: sans-serif;
+		}
+
+
+		.titleText {
+			position: absolute;
+			text-align: center;
+			vertical-align: middle;
+			width: 100%;
+			font-size: 50;
+			color: azure;
+		}
+
+		.lateDisplay {
+			opacity: 0;
 		}
 
 	</style>
 </head>
 
-<body>
-	<p class="title">Hey what's up y'all</p>
-	<p class="subtitle">Welcome to my website</p>
-	<p class="subtitle">There's nothing else here...</p>
-	<p class="subtitle">..yet?</p>
+<body id="body">
+	<div class="titles">
+		<h1 class="titleText" id="typing" style="top: 30%; color: black"> background: black;</h1>
+		<p class="titleText lateDisplay" style="top: 30%; font-size: 80">Jack Walmsley</p>
+	</div>
+	<script>
+		var i = 0;
+		var txt = document.getElementById("typing").innerHTML;
+		document.getElementById("typing").innerHTML = "";
+		var speed;
+
+		function typeWriter() {
+			if (i < txt.length) {
+				if (i == 0 | i == txt.length - 1) {
+					speed = 1000;
+				} else {
+					speed = 70;
+				}
+				document.getElementById("typing").innerHTML += txt.charAt(i);
+				i++;
+				setTimeout(typeWriter, speed);
+			} else if (i == txt.length) {
+				showWebsite();
+			}
+		}
+
+		function showWebsite() {
+			document.getElementById("body").style.background = "rgb(0, 0, 0)";
+			document.getElementById("typing").style.opacity = "0";
+			for (i = 0; i < document.getElementsByClassName("lateDisplay").length; i++) {
+				document.getElementsByClassName("lateDisplay")[i].style.opacity = "100";
+			}
+		}
+		typeWriter();
+
+	</script>
+
 </body>
 
 </html>
