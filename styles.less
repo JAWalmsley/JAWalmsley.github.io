@@ -1,18 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
+
+
+@prismarine: #bffce6;
+@mint: #90d8a8;
+@milk-chocolate: #734935;
+@cocoa-bean: #4d2b25;
+@semisweet: #211311;
+
+@keyframes bounce {
+  0%  {transform: translateY(0);}
+  50% {transform: translateY(20px);}
+  100% {transform: translateY(0);}
+}
+
 body {
   overflow-x: hidden;
   font-family: sans-serif;
+  background-color: @semisweet;
 }
 
-
-.titleText {
+.title {
   position: absolute;
   text-align: center;
   vertical-align: middle;
   width: 100%;
-  font-size: 50;
-  color: azure;
+  color: @prismarine;
 }
 
-.lateDisplay {
-  opacity: 0;
+.titleText {
+  font-size: 100px;
+  font-weight: 300;
+  font-family: 'Roboto Slab', serif;
+}
+
+.scroll-hint {
+  font-size: 50px;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-timing-function: ease-in-out;
 }

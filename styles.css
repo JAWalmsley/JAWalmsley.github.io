@@ -1,16 +1,71 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-U1Ug.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rg-VQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v12/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSWaA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v12/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISWaA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v12/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSWaA.ttf) format('truetype');
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 body {
   overflow-x: hidden;
   font-family: sans-serif;
+  background-color: #211311;
 }
-.titleText {
+.title {
   position: absolute;
   text-align: center;
   vertical-align: middle;
   width: 100%;
-  font-size: 50;
-  color: azure;
+  color: #bffce6;
 }
-.lateDisplay {
-  opacity: 0;
+.titleText {
+  font-size: 100px;
+  font-weight: 300;
+  font-family: 'Roboto Slab', serif;
+}
+.scroll-hint {
+  font-size: 50px;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-timing-function: ease-in-out;
 }
 /*# sourceMappingURL=styles.css.map */

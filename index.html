@@ -1,46 +1,27 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body id="body">
-	<div class="titles">
-		<h1 class="titleText" id="typing" style="top: 30%; color: black"> background: black;</h1>
-		<p class="titleText lateDisplay" style="top: 30%; font-size: 80">Jack Walmsley</p>
-	</div>
-	<script>
-		var i = 0;
-		var txt = document.getElementById("typing").innerHTML;
-		document.getElementById("typing").innerHTML = "";
-		var speed;
-
-		function typeWriter() {
-			if (i < txt.length) {
-				if (i == 0 | i == txt.length - 1) {
-					speed = 1000;
-				} else {
-					speed = 70;
-				}
-				document.getElementById("typing").innerHTML += txt.charAt(i);
-				i++;
-				setTimeout(typeWriter, speed);
-			} else if (i == txt.length) {
-				showWebsite();
-			}
-		}
-
-		function showWebsite() {
-			document.getElementById("body").style.background = "rgb(0, 0, 0)";
-			document.getElementById("typing").style.opacity = "0";
-			for (i = 0; i < document.getElementsByClassName("lateDisplay").length; i++) {
-				document.getElementsByClassName("lateDisplay")[i].style.opacity = "100";
-			}
-		}
-		typeWriter();
-
-	</script>
-
+<div class="titles">
+    <p class="title titleText" style="top: 30%">Jack Walmsley</p>
+    <span class="material-icons title scroll-hint" style="top: 90%">keyboard_arrow_down</span>
+</div>
+<script>
+    // Scroll hint fading
+    window.addEventListener("scroll", () => {
+        const checkpoint = 300;
+        const currentScroll = window.pageYOffset;
+        if (currentScroll <= checkpoint) {
+            opacity = 1 - currentScroll / checkpoint;
+        } else {
+            opacity = 0;
+        }
+        document.querySelector(".scroll-hint").style.opacity = opacity;
+    });
+</script>
 </body>
-
 </html>
