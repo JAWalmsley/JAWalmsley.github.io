@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="overflow-y: hidden;">
+        <div class=page style="width:100%; text-align: center;">
+            <p class="title title-text">Days Since March 12, 2020</p>
+            <ul id="counter" class="section-title-text"></ul>
+        </div>
+    </body>
+    <script>
+        let counter = document.getElementById("counter");
+        let today = new Date();
+        let mar122020 = new Date('2020-03-12')
+        let deltaTime = today.getTime() - mar122020.getTime();
+        counter.innerText = Math.floor(deltaTime / (1000 * 3600 * 24));
+        // console.log(mar122020.getTime())
+    </script>
+</html>
