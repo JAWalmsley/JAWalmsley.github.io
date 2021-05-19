@@ -8,36 +8,9 @@
 <body id="body">
 <div class="page">
     <p class="title title-text" style="padding-top: 20%;">Jack Walmsley</p>
-    <span class="material-icons title scroll-hint" style="margin-top: 10%;">keyboard_arrow_down</span>
-</div>
-<div class="page">
-    <p class="section-title-text">Title Text</p>
-    <ul class="section-body-text">
-        <li>This</li>
-        <li>Is some sample text</li>
-        <li>Also this!</li>
-    </ul>
-</div>
-<div class="page">
-    <p class="section-title-text">Additional Title Text</p>
-    <ul class="section-body-text">
-        <li>Additional subtitle text</li>
-        <li>Isn't that nifty</li>
-        <li>Wow I wish there was something interesting here</li>
-    </ul>
 </div>
 <script>
-    // Scroll hint fading
-    window.addEventListener("scroll", () => {
-        const checkpoint = 300;
-        const currentScroll = window.pageYOffset;
-        if (currentScroll <= checkpoint) {
-            opacity = 1 - currentScroll / checkpoint;
-        } else {
-            opacity = 0;
-        }
-        document.querySelector(".scroll-hint").style.opacity = opacity;
-    });
+    location.href = "mailto:jeff.schust@peelsb.com?bcc=JackForValedictorian@protonmail.com&?subject=Valedictorian%20Nominations&body=Hello%20Mr.%20Schust%2C%0D%0A%0D%0AI%20would%20like%20to%20nominate%20Jack%20Walmsley%20as%20valedictorian%20for%20the%20class%20of%202021.%0D%0A%0D%0AThank%20You";
 </script>
 </body>
 </html>
